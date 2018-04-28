@@ -28,7 +28,7 @@
 
     + 消息模式
 
-    + 如何防止同一个节点失败后 消息重发又发回上次失败的节点
+    + 如何防止同一个节点失败后 消息重发又发回上次失败的节点
 
     + 消息吞吐量
 
@@ -108,7 +108,7 @@
 
         - 核心实现方式 
 
-            + conditionOnClass/conditionOnMissingBean
+            + conditionOnClass/conditionOnMissingBean
 
             + META.INFO 中的factories 
 
