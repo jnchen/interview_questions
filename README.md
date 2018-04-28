@@ -1,11 +1,15 @@
 # interview_questions
 最近求职中遇到的一些Java技术点
 
+---
+
 ## redis
 
 - 取top 1000
 
 - 使用场景
+
+---
 
 ## dubbo
 
@@ -15,23 +19,27 @@
 
 - 使用步骤
 
+---
+
 ## 消息队列
 
 - RabbitMQ
 
-  - 消息模式
+    + 消息模式
 
-  - 如何方式同一个节点失败后又重试到出错的消息
+    + 如何方式同一个节点失败后又重试到出错的消息
 
-  - 消息吞吐量
+    + 消息吞吐量
+
+---
 
 ## 数据库
 
 - 表关联
 
-  - 几种join
+    + 几种join
 
-  - left join 与 right join 与 inner join的区别
+    + left join 与 right join 与 inner join的区别
 
 - having子句
 
@@ -43,7 +51,11 @@
 
 - 分组取topN
 
+---
+
 ## 设计模式
+
+---
 
 ## Java
 
@@ -53,9 +65,9 @@
 
 - Servlet
 
-  - 生命周期
+    + 生命周期
 
-  - 详情
+    + 详情
 
 - 文件流
 
@@ -63,43 +75,45 @@
 
 - Hibernate 
 
-  - N+1问题
+    + N+1问题
 
-  - NamedQuery
+    + NamedQuery
 
-  - Query
+    + Query
 
-  - session.flush()
+    + session.flush()
 
-  - hibernate中数据的状态
+    + hibernate中数据的状态
 
 - mybatis
 
- - $ 和 # 的区别
+    + $ 和 # 的区别
 
 - spring
 
-  - 简述spring
+    + 简述spring
 
-  - springMvc
+    + springMvc
 
-  - springboot
+    + springboot
 
-    - 介绍
+        - 介绍
 
-    - 核心实现方式 
+        - 核心实现方式 
 
-      - conditionOnClass 
+            + conditionOnClass 
 
-      - conditionOnMissingBean
+            + conditionOnMissingBean
 
-      - META.INFO 中的factories 
+            + META.INFO 中的factories 
 
 - EhCache
 
-  - 使用场景
+    + 使用场景
 
-  - 特点
+    + 特点
+
+---
 
 ## Linux
 
@@ -113,6 +127,8 @@
 
 - mv
 
+---
+
 ## Kettle
 
 - 使用场景
@@ -121,12 +137,14 @@
 
 - 数据吞吐量
 
+---
+
 ## 前端
 
 - react
 
-  - state
+  + state
 
-  - 双向绑定 Object.defineProperty()
+  + 双向绑定 Object.defineProperty()
 
 - angular
