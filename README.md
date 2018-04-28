@@ -3,130 +3,130 @@
 
 ## redis
 
-### 取top 1000
+- 取top 1000
 
-### 使用场景
+- 使用场景
 
 ## dubbo
 
-### 关注的层
+- 关注的层
 
-### 实现原理
+- 实现原理
 
-### 使用步骤
+- 使用步骤
 
 ## 消息队列
 
-### RabbitMQ
+- RabbitMQ
 
-#### 消息模式
+  - 消息模式
 
-#### 如何方式同一个节点失败后又重试到出错的消息
+  - 如何方式同一个节点失败后又重试到出错的消息
 
-#### 消息吞吐量
+  - 消息吞吐量
 
 ## 数据库
 
-### 表关联
+- 表关联
 
-#### 几种join
+  - 几种join
 
-#### left join 与 right join 与 inner join的区别
+  - left join 与 right join 与 inner join的区别
 
-### having子句
+- having子句
 
-### 事务隔离级别
+- 事务隔离级别
 
-### 数据库范式
+- 数据库范式
 
-### mysql
+- mysql
 
-### 分组取topN
+- 分组取topN
 
 ## 设计模式
 
 ## Java
 
-### 反射
+- 反射
 
-### 泛型
+- 泛型
 
-### Servlet
+- Servlet
 
-#### 生命周期
+  - 生命周期
 
-#### 详情
+  - 详情
 
-### 文件流
+- 文件流
 
-### Socket
+- Socket
 
-### Hibernate 
+- Hibernate 
 
-#### N+1问题
+  - N+1问题
 
-#### NamedQuery
+  - NamedQuery
 
-#### Query
+  - Query
 
-#### session.flush()
+  - session.flush()
 
-#### hibernate中数据的状态
+  - hibernate中数据的状态
 
-### mybatis
+- mybatis
 
-#### $ 和 # 的区别
+ - $ 和 # 的区别
 
-### spring
+- spring
 
-#### 简述spring
+  - 简述spring
 
-#### springMvc
+  - springMvc
 
-#### springboot
+  - springboot
 
-##### 介绍
+    - 介绍
 
-##### 核心实现方式 
+    - 核心实现方式 
 
-- conditionOnClass 
+      - conditionOnClass 
 
-- conditionOnMissingBean
+      - conditionOnMissingBean
 
-- META.INFO 中的factories 
+      - META.INFO 中的factories 
 
-### EhCache
+- EhCache
 
-#### 使用场景
+  - 使用场景
 
-#### 特点
+  - 特点
 
 ## Linux
 
-### scp
+- scp
 
-### ps
+- ps
 
-### tail
+- tail
 
-### top
+- top
 
-### mv
+- mv
 
 ## Kettle
 
-### 使用场景
+- 使用场景
 
-### 增量抽取
+- 增量抽取
 
-### 数据吞吐量
+- 数据吞吐量
 
 ## 前端
 
-### react
+- react
 
-#### state
+  - state
 
-#### 双向绑定 Object.defineProperty()
+  - 双向绑定 Object.defineProperty()
 
-### angular
+- angular
