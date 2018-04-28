@@ -1,4 +1,5 @@
-# interview_questions
+# Java面试题目总结
+
 最近求职中遇到的一些Java技术点
 
 ---
@@ -63,6 +64,10 @@
 
 - 泛型
 
+- 面向切面编程(AOP)
+
+- Filter过滤器和Interceptor拦截器
+
 - Servlet
 
     + 生命周期
@@ -107,6 +112,8 @@
 
             + META.INFO 中的factories 
 
+    + spring 事务
+
 - EhCache
 
     + 使用场景
@@ -148,3 +155,7 @@
   + 双向绑定 Object.defineProperty()
 
 - angular
+
+---
+
+## 简述最有成就感的技术的使用
