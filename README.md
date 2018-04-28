@@ -94,7 +94,7 @@
 
     + $ 和 # 的区别
     
-    + namespace的作用
+    + namespace的作用
 
 - spring
 
