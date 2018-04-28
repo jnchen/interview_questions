@@ -28,7 +28,7 @@
 
     + 消息模式
 
-    + 如何方式同一个节点失败后又重试到出错的消息
+    + 如何防止同一个节点失败后 消息重发又发回上次失败的节点
 
     + 消息吞吐量
 
@@ -93,6 +93,8 @@
 - mybatis
 
     + $ 和 # 的区别
+    
+    + namespace的作用
 
 - spring
 
@@ -106,9 +108,7 @@
 
         - 核心实现方式 
 
-            + conditionOnClass 
-
-            + conditionOnMissingBean
+            + conditionOnClass/conditionOnMissingBean
 
             + META.INFO 中的factories 
 
@@ -133,6 +133,8 @@
 - top
 
 - mv
+
+- nohup
 
 ---
 
