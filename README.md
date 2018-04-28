@@ -26,22 +26,6 @@
 
 ---
 
-## dubbo
-
-- 分布式服务框架： 软负载均衡 额外提供监控中心Monitor和调用中心
-
-- 关注的层 Service层
-
-- 实现原理 rpc
-
-- 使用步骤
-
-    + 引入Service层interface
-    
-    + 引入Domain层实体类
-
----
-
 ## 消息队列
 
 - RabbitMQ
@@ -266,7 +250,20 @@
 
     + 使用场景
 
-    + 特点
+    + 特点
+- dubbo
+
+    - 分布式服务框架： 软负载均衡 额外提供监控中心Monitor和调用中心
+
+    - 关注的层 Service层
+
+    - 实现原理 rpc
+
+    - 使用步骤
+
+        + 引入Service层interface
+
+        + 引入Domain层实体类
 
 ---
 
