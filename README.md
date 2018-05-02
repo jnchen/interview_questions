@@ -220,7 +220,13 @@
 
     + session.flush()
 
-    + hibernate中数据的状态
+    + hibernate中对象的状态
+        
+        - 临时状态（Transient）：刚刚使用new语句创建，还没有被持久化，不处于Session的缓存中。处于临时状态的状态的Java对象被称为临时对象
+        
+        - 持久化状态（Persistent）：已经被持久化，加入到Session的缓存中。处于持久化状态的Java对象被称为持久化对象
+
+        - 游离状态（Detached）：已经被持久化，但不处于session的缓存中。处于游离状态的Java对象被称为游离对象。
 
 - mybatis
 
