@@ -8,11 +8,24 @@
 
 - 主要特点: 分布式、独占、持久化
 
+- 数据类型：
+
+    + string(字符串)：二进制安全，可以包含任何数据，如图片和序列化的对象，一个key最大存储512MB。 set key value/get key
+
+    + hash(哈希)：键值对集合，特别适合存储对象，每个hash可以存储键值对数量：$ 2^{32} -1 $ （40多亿）。HMSET k1 v1 k2 v2/HGET key 
+
+    + list(列表)：有序字符串列表，按照插入顺序排序，可以添加到头部(lpush)或者尾部(rpush)。
+
+    + set(集合)：string类型的无序集合，通过hash表实现，因此最多存储$2^{32}-1$个成员，添加、删除、查找都是O(1)。sadd key member
+
+    + zset(sorted set:有序集合)：和set类似，string元素的集合，并且不允许重复成员。但每个元素都会关联一个double类型的分数(score)，通过分数为集合中成员进行从小到大排序。zadd key score member
+
+
 - 取top 1000
 
     - sort 命令
     
-    - sorted set 
+    - zset 
 
 - 使用场景
 
@@ -198,11 +211,41 @@
 
 - 面向切面编程(AOP)
 
+- 异步编程
+
+    + 锁的种类：同步锁 异步锁
+    
+    + synchronized 关键字
+
+        - 如果作用的对象是非静态的，那么取得锁的是对象
+
+        - 如果作用的对象是静态方法或者一个类，那么取得的锁是类，该类的所有对象同用一把锁
+
+        - 实现同步需要系统很大开销，甚至造成死锁，尽量避免无意义的同步控制
+    
+    + wait()/notify()/notifyAll()
+
+        - wait()和notify()必须要与synchronized(resource)一起使用，即Obj.wait(),Obj.notify()必须在synchronized(Obj){...}语句块中使用。
+
+        - wait() 线程在获取对象锁后，主动释放CPU控制权，主动释放对象锁，同时本线程休眠，直到有其他线程调用对象的notify()被唤醒，然后继续执行。
+
+        - notify() 对对象锁的释放操作，但不立刻释放CPU控制权，而是在相应的synchronized(){...}语句块执行结束后再自动释放锁。
+    
+    + Thread
+
+        - sleep() 只释放cpu控制权，不释放锁，这点和wait()不相同
+
+        - join() 让两个线程保持同步 例如：A、B两种进程，如果在B中调用了A.join()，则表示A线程执行完了才开始执行B线程
+
+        - interrupt() 只有被Obj.wait()、Thread.join()和Thread.sleep()三种方法之一阻塞的时候，调用interrupt()才有效果。它会提前结束阻塞，然后抛出InterruptedException异常。Obj.wait()要小心锁的问题，wait()过程中调用Interrupt()会先重新获取它的锁，再抛出异常，获得之前还是会阻塞。
+
 - Filter过滤器和Interceptor拦截器
 
 - Servlet
 
     + 生命周期
+    
+    + 内置对象
 
     + 详情
 
@@ -234,6 +277,44 @@
     
     + namespace的作用
 
+- mvc
+
+    + 组成
+
+        - Model(模型)：处理应用程序数据逻辑的部分，通常负责在数据库中存取数据
+
+        - View(视图)：处理应用程序数据显示的部分，通常是依据模型数据创建的
+
+        - Controller(控制器)：处理应用程序中用户交互的部分，通常负责从视图读取数据，控制用户输入，并向模型发送数据
+
+    + 意义：有助于管理复杂的应用程序，简化了分组开发
+
+    + 优点
+
+        - 耦合性低
+
+        - 重用性高
+
+        - 生命周期成本低
+
+        - 部署快
+
+        - 可维护性高
+
+        - 有利于软件工程化管理
+
+    + 缺点
+
+        - 没有明确定义
+
+        - 不适合小型，中等规模的应用
+
+        - 增加系统结构和实现的复杂性
+
+        - 视图与控制器间连接过于紧密
+
+        - 视图对模型数据的低效率访问
+
 - spring
 
     + 简述spring
@@ -258,6 +339,12 @@
 
     + 特点
 
+- overload与override
+
+    + overload 重载 相同名称、返回值但参数表不同的方法
+
+    + override 重写 对父类方法的覆盖，参数表与父类一致
+
 - dubbo
 
     - 分布式服务框架： 软负载均衡 额外提供监控中心Monitor和调用中心
@@ -271,6 +358,14 @@
         + 引入Service层interface
 
         + 引入Domain层实体类
+
+---
+
+## docker
+
+- 使用场景
+
+- 打包到image
 
 ---
 
@@ -307,6 +402,10 @@
   + state
 
   + 双向绑定 Object.defineProperty()
+
+- webpack
+
+    + 作用
 
 - angular
 
